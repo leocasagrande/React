@@ -22,13 +22,27 @@
 // document.write(`<img src=${img}/>`)
 
 var greeting = document.getElementById('greeting')
+var username = ''
 
 function login(){
-    var username = prompt('Enter your username')
+    username = prompt('Enter your username')
 
     if(username === null || username === ''){
         alert('Please, enter your username')
     }else{
         greeting.innerHTML = `Bem vindo, ${username}`
+
+        let logoutBtn = document.createElement('button')
+
+        logoutBtn.innerText = 'Log out'
+
+        logoutBtn.onclick = logout()
+
+        greeting.appendChild(logoutBtn)
     }
+}
+
+function logout(){
+    alert('You have been logged out')
+    greeting.innerHTML = `Até mais, ${username}`
 }
