@@ -198,12 +198,57 @@
 //     document.write('<p>counter</p>')
 // }, 1000)
 
-let counter = document.getElementById('contador')
+// let counter = document.getElementById('contador')
 
-var myTimer = setInterval(() =>{
-    counter.innerHTML += 'Hello <br/>'
-}, 1000)
+// var myTimer = setInterval(() =>{
+//     counter.innerHTML += 'Hello <br/>'
+// }, 1000)
 
-function stopTimer(){
-    clearInterval(myTimer)
+// function stopTimer(){
+//     clearInterval(myTimer)
+// }
+
+// setTime(imprimir, 4000)
+
+// setTimeout(() => {}, 4000)
+
+// var nome = 'Leonardo'
+
+// if(nome  === 'Leonardo'){
+//     var profissao = 'Aluno'
+//     console.log(profissao);
+// }
+
+// if(nome === 'Leonardo'){
+//     let cargo = 'CEO'
+//     console.log(cargo);
+// }
+
+// if(nome === 'Leonardo'){
+//     const cargo = 'CEO'
+//     console.log(cargo);
+// }
+
+let pessoa = {
+    nome: 'Leonardo',
+    idade: 21,
+    cargo: 'CEO'
 }
+
+// console.log(pessoa.cargo, pessoa.idade, pessoa.nome);
+
+let {nome, idade, cargo} = pessoa
+
+console.log(nome);
+console.log(idade);
+console.log(cargo);
+
+// let usuarios = [
+//     {nome:'Leonardo', idade: 21, cargo:'dev'},
+//     {nome:'Tiago', idade: 25, cargo:'web-dev'},
+//     {nome:'Ester', idade: 20, cargo:'full-stack'}
+// ]
+
+// for(let i = 0; i < usuarios.length; i++){
+//     console.log(usuarios[i].nome)
+// }
