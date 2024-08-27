@@ -189,11 +189,21 @@
 //     document.write(`<h2>Os numeros da sua loto mania: <p>${lista.toString()}</p></h2>`)
 // }
 
-function imprimir(){
-    document.write('<p>counter</p>')
-    setInterval(imprimir, 1000)
-}
+// function imprimir(){
+//     document.write('<p>counter</p>')
+//     setInterval(imprimir, 1000)
+// }
 
-setInterval(() => {
-    document.write('<p>counter</p>')
+// setInterval(() => {
+//     document.write('<p>counter</p>')
+// }, 1000)
+
+let counter = document.getElementById('contador')
+
+var myTimer = setInterval(() =>{
+    counter.innerHTML += 'Hello <br/>'
 }, 1000)
+
+function stopTimer(){
+    clearInterval(myTimer)
+}
