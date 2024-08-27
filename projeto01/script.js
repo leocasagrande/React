@@ -229,19 +229,19 @@
 //     console.log(cargo);
 // }
 
-let pessoa = {
-    nome: 'Leonardo',
-    idade: 21,
-    cargo: 'CEO'
-}
+// let pessoa = {
+//     nome: 'Leonardo',
+//     idade: 21,
+//     cargo: 'CEO'
+// }
 
 // console.log(pessoa.cargo, pessoa.idade, pessoa.nome);
 
-let {nome, idade, cargo} = pessoa
+// let {nome, idade, cargo} = pessoa
 
-console.log(nome);
-console.log(idade);
-console.log(cargo);
+// console.log(nome);
+// console.log(idade);
+// console.log(cargo);
 
 // let usuarios = [
 //     {nome:'Leonardo', idade: 21, cargo:'dev'},
@@ -252,3 +252,57 @@ console.log(cargo);
 // for(let i = 0; i < usuarios.length; i++){
 //     console.log(usuarios[i].nome)
 // }
+
+
+// let pares = [2, 4, 6, 8, 10]
+// let impares = [pares, 1, 3, 5, 7, 9]
+
+// let pares = [2, 4, 6, 8, 10]
+// let impares = [...pares, 1, 3, 5, 7, 9]
+
+// let pessoa = {
+//     name: 'Bob',
+//     age: 23,
+//     status: 'Single'
+// }
+
+//Spread operation
+
+// let pessoaProf = {
+//     ...pessoa,
+//     profession: 'CEO',
+//     salary: 15000
+// }
+
+// function user(info){
+//     let newUser = {
+//         ...info,
+//         profession: 'CEO'
+//     }
+//     console.log(newUser);
+// }
+
+// user({nome: 'Bob', age: 34})
+
+//Rest operator
+
+// function alunos(...nomes){
+//     console.log(nomes);
+// }
+
+// alunos('Leonardo', 'Sabrina', 'Matheus')
+
+// let nomes = ['Leonardo', 'Sabrina', 'Matheus', 'Eduardo']
+
+// nomes.map((item, index) =>{
+//     console.log(`${index} - ${item}`);
+// })
+
+let numeros = [1, 5, 10, 15, 20, 25, 30]
+
+function numeroAleatorio(...numero){
+    let num = Math.floor(Math.random() * numeros.length);
+    console.log(numeros[num]);
+}
+
+numeroAleatorio(numeros)
