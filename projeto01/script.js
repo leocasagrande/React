@@ -162,29 +162,38 @@
 
 //Crie um programa que gere quantidade pedida de numeros aleatorios da loteria para o usuario
 
-function geraMega(){
-    let lista = []
-    for(let i = 0; i < 6; i ++){
-        let n = Math.floor(Math.random() * (60 - 1) + 1)
-        lista.push(n)
-    }
-    document.write(`<h2>Os numeros da sua mega: ${lista.toString()}</h2>`)
+// function geraMega(){
+//     let lista = []
+//     for(let i = 0; i < 6; i ++){
+//         let n = Math.floor(Math.random() * (60 - 1) + 1)
+//         lista.push(n)
+//     }
+//     document.write(`<h2>Os numeros da sua mega: ${lista.toString()}</h2>`)
+// }
+
+// function geraQuina(){
+//     let lista = []
+//     for(let i = 0; i < 5; i ++){
+//         let n = Math.floor(Math.random() * (80 - 1) + 1)
+//         lista.push(n)
+//     }
+//     document.write(`<h2>Os numeros da sua quina: ${lista.toString()}</h2>`)
+// }
+
+// function geraMania(){
+//     let lista = []
+//     for(let i = 0; i < 50; i ++){
+//         let n = Math.floor(Math.random() * (99 - 1) + 1)
+//         lista.push(n)
+//     }
+//     document.write(`<h2>Os numeros da sua loto mania: <p>${lista.toString()}</p></h2>`)
+// }
+
+function imprimir(){
+    document.write('<p>counter</p>')
+    setInterval(imprimir, 1000)
 }
 
-function geraQuina(){
-    let lista = []
-    for(let i = 0; i < 5; i ++){
-        let n = Math.floor(Math.random() * (80 - 1) + 1)
-        lista.push(n)
-    }
-    document.write(`<h2>Os numeros da sua quina: ${lista.toString()}</h2>`)
-}
-
-function geraMania(){
-    let lista = []
-    for(let i = 0; i < 50; i ++){
-        let n = Math.floor(Math.random() * (99 - 1) + 1)
-        lista.push(n)
-    }
-    document.write(`<h2>Os numeros da sua loto mania: <p>${lista.toString()}</p></h2>`)
-}
+setInterval(() => {
+    document.write('<p>counter</p>')
+}, 1000)
